@@ -1,0 +1,17 @@
+###consul服务端口号
+server:
+  port: 8006
+
+spring:
+  application:
+    name: consul-provider-payment
+  ####consul注册中心地址
+  cloud:
+    consul:
+      host: 192.168.174.128 # 用linux的IP地址
+      port: 8500
+      discovery:
+        #hostname: 127.0.0.1 配置当前项目所在的主机IP,
+        service-name: ${spring.application.name}
+        heartbeat: # 如果心跳不打开,则服务上面可能出现一个红叉
+          enabled: true
