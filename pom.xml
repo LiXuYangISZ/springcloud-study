@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.rg.springcloud</groupId>
-  <artifactId>cloud2021</artifactId>
+  <artifactId>springcloud-study</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>cloud-provider-payment8001</module>
@@ -120,13 +120,12 @@
 
   <build>
     <!--finalName:工程名称-->
-    <finalName>cloud2021</finalName>
+    <finalName>springcloud-study</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
-          <fork>true</fork>
           <addResources>true</addResources>
         </configuration>
       </plugin>
